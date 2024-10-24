@@ -1,2 +1,0 @@
-# IAltomatiza
-IAltomatiza web page
