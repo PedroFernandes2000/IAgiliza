@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .header .logo {
+    height: 53px;
+    font-weight: bold;
+    color: #ff6700;
+  }
+  
+  .header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header li {
+    cursor: pointer;
+  }
+  
+  button{
+    border: null;
+    border-color: #00000000;
+    background-color: #00000000;
+    height: 35px;
+    cursor: pointer;
+  }
