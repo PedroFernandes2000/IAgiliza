@@ -1,6 +1,5 @@
 {
   "$schema": "./package-schema.json",
-  "homepage": "https://pedrofernandes2000.github.io/IAgiliza",
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,
@@ -36,6 +35,7 @@
     "deploy": "gh-pages -d dist",         
     "test": "vitest"
   },
+    "homepage": "https://pedrofernandes2000.github.io/IAgiliza",
   "eslintConfig": {
     "extends": [
       "react-app",
