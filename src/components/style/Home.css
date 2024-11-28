@@ -1,0 +1,169 @@
+/* Página Inicial - Home */
+/* Geral */
+/* Hero Section */
+
+.home .hero {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+  text-align: center;
+  padding: 4rem;
+  height: 90vh; /* Ocupa a altura total da tela */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.65)), url('/src/components/images/backgrund-pagina-inicial.webp');
+  background-size: cover; /* Garante que a imagem de fundo cobre todo o espaço */
+  background-position: center; /* Centraliza a imagem de fundo */
+  color: white; /* Define a cor do texto no Hero */
+}
+
+.hero .hero-content {
+  max-width: 800px; /* Define uma largura máxima para o conteúdo */
+}
+
+.home .hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home .hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 1rem;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.primary {
+  background: #007bff;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.secondary:hover {
+  background: #007bff;
+  color: white;
+}
+
+
+/* Seções */
+.home .section-title {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+/* Serviços */
+.home .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.home .service-card {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.home .service-card h3 {
+  color: #007bff;
+}
+
+/* Diferenciais */
+.differentials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+.differential-item {
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.home .icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* CTA Final */
+.cta-final {
+  text-align: center;
+  padding: 2rem;
+  background: #007bff;
+  color: white;
+  padding: 0 2rem;
+}
+
+.testimonials {
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-button {
+  background: none;
+  border: 2px solid #007bff;
+  color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.testimonial-card {
+  background-color: #a2aeb910;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.1);
+}
+
+.testimonial-card h4 {
+  margin-top: 1rem;
+  color: #646262;
+}

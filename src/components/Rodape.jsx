@@ -1,7 +1,7 @@
 import React from 'react';
 import './style/Rodape.css';
 
-function Footer() {
+function Rodape() {
   return (
     <footer className="footer">
       <p>IAgiliza ©</p>
@@ -9,4 +9,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Rodape;

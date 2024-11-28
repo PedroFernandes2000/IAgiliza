@@ -1,20 +1,38 @@
 import React from 'react';
-import Header from './components/Cabecalho.jsx';
-import HeroSection from './components/Titulo.jsx';
-import IntegrationSection from './components/IntegrationSection.jsx';
-import Footer from './components/Rodape.jsx';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Cabecalho from './components/Cabecalho.jsx';
+import Principal from './components/Home.jsx';
+import Sobre from './components/Sobre.jsx';
+import Servicos from './components/Servicos.jsx';
+import Depoimentos from './components/Depoimentos.jsx';
+import Contato from './components/Contato.jsx';
+import Blog from './components/Blog.jsx';
+import Cliente from './components/Login.jsx';
+import Dashboard from './components/Dashboard.jsx';
+import Rodape from './components/Rodape.jsx';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <Header />
-      <HeroSection />
-      <IntegrationSection />
+    <Router>
 
+      <Cabecalho />
 
-      <Footer />
-    </div>
+      <Routes>
+        <Route path="/" element={<Principal />} />
+        <Route path="/Sobre" element={<Sobre />} />
+        <Route path="/Servicos" element={<Servicos />} />
+        <Route path="/Depoimentos" element={<Depoimentos />} />
+        <Route path="/Contato" element={<Contato />} />
+        <Route path="/Cliente" element={<Cliente />} />
+        <Route path="/dashboard/" element={<Dashboard />} /> 
+        <Route path="/Blog" element={<Blog />} />
+      </Routes>
+
+      <Rodape />
+
+    </Router>
   );
 }
 

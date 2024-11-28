@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "diffEditor.useInlineViewWhenSpaceIsLimited": true,
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on"
+}
