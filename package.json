@@ -1,5 +1,6 @@
 {
   "$schema": "./package-schema.json",
+  "homepage": "https://pedrofernandes2000.github.io/IAgiliza",
   "name": "codespaces-react",
   "version": "0.1.0",
   "private": true,

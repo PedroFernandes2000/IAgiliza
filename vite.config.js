@@ -1,11 +1,8 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+// Configuração para GitHub Pages
 export default defineConfig({
   plugins: [react()],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-  },
-})
+  base: '/IAgiliza/', // Subdiretório do repositório no GitHub Pages
+});
