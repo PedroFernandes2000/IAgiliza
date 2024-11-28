@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cabecalho from './components/Cabecalho.jsx';
+import ChatButton from './components/ChatButton.jsx';
 import Principal from './components/Home.jsx';
 import Sobre from './components/Sobre.jsx';
 import Servicos from './components/Servicos.jsx';
@@ -18,7 +19,7 @@ function App() {
     <Router>
 
       <Cabecalho />
-
+      <ChatButton />
       <Routes>
         <Route path="/" element={<Principal />} />
         <Route path="/Sobre" element={<Sobre />} />
