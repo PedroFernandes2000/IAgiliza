@@ -4,19 +4,19 @@ import './style/Dashboard.css';
 
 const LogoutButton = () => {
     const navigate = useNavigate();
-  
+
     const handleLogout = () => {
-      // Aqui você pode adicionar lógica para limpar dados do usuário, se necessário
-      console.log('Usuário desconectado');
-      navigate('/'); // Redireciona para a página principal
+        // Aqui você pode adicionar lógica para limpar dados do usuário, se necessário
+        console.log('Usuário desconectado');
+        navigate('/'); // Redireciona para a página principal
     };
-  
+
     return (
-      <button  onClick={handleLogout}>
-        Logout
-      </button>
+        <button onClick={handleLogout}>
+            Logout
+        </button>
     );
-  };
+};
 
 
 // Páginas da Dashboard
@@ -122,7 +122,7 @@ const Dashboard = () => {
                         Configurações
                     </li>
                     <li className="nav-item">
-                        <LogoutButton/>
+                        <LogoutButton />
                     </li>
                 </ul>
             </aside>
