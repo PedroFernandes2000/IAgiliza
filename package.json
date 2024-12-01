@@ -1,6 +1,7 @@
 {
   "$schema": "./package-schema.json",
-  "name": "codespaces-react",
+  "name": "iagiliza",
+  "homepage": "iagiliza/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
