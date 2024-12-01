@@ -20,16 +20,16 @@ function App() {
 
       <Cabecalho />
       <ChatButton />
-      
+
       <Routes>
-        <Route path="/" element={<Principal />} />
-        <Route path="/Sobre" element={<Sobre />} />
-        <Route path="/Servicos" element={<Servicos />} />
-        <Route path="/Depoimentos" element={<Depoimentos />} />
-        <Route path="/Contato" element={<Contato />} />
-        <Route path="/Blog" element={<Blog />} />
-        <Route path="/Cliente" element={<Cliente />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/iagiliza" element={<Principal />} />
+        <Route path="/iagiliza/Sobre" element={<Sobre />} />
+        <Route path="/iagiliza/Servicos" element={<Servicos />} />
+        <Route path="/iagiliza/Depoimentos" element={<Depoimentos />} />
+        <Route path="/iagiliza/Contato" element={<Contato />} />
+        <Route path="/iagiliza/Blog" element={<Blog />} />
+        <Route path="/iagiliza/Cliente" element={<Cliente />} />
+        <Route path="/iagiliza/Dashboard" element={<Dashboard />} />
       </Routes>
 
       <Rodape />

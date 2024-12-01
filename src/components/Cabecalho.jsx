@@ -12,7 +12,7 @@ function Cabecalho({ user }) {
   return (
     <header className="header">
       {/* Logo */}
-      <Link to='/' className="link">
+      <Link to='/iagiliza/' className="link">
         <img className='logo' src="src/components/images/logoIAgiliza.png" alt="IAgiliza" />
       </Link>
 
@@ -20,21 +20,21 @@ function Cabecalho({ user }) {
       <nav>
         <ul>
           <li>
-            <Link to='/Sobre' className="link">Sobre Nós</Link>
+            <Link to='/iagiliza/Sobre' className="link">Sobre Nós</Link>
           </li>
           <li>
-            <Link to="/Servicos" className='link'>Serviços</Link>
+            <Link to="/iagiliza/Servicos" className='link'>Serviços</Link>
           </li>
           <li>
-            <Link to='/Depoimentos' className="link">Casos de Sucesso</Link>
+            <Link to='/iagiliza/Depoimentos' className="link">Casos de Sucesso</Link>
           </li>
           <li>
-            <Link to='/Blog' className="link">Blog</Link>
+            <Link to='/iagiliza/Blog' className="link">Blog</Link>
           </li>
           <li>
-            <Link to='/Contato' className='link'>Fale conosco</Link>
+            <Link to='/iagiliza/Contato' className='link'>Fale conosco</Link>
           </li>
-          
+
           {/* Exibe login ou nome do usuário */}
           {isLoggedIn ? (
             <li className="user-profile">
@@ -47,7 +47,7 @@ function Cabecalho({ user }) {
             </li>
           ) : (
             <li>
-              <Link to='/Cliente' className='link'>Login</Link>
+              <Link to='/iagiliza/Cliente' className='link'>Login</Link>
             </li>
           )}
         </ul>

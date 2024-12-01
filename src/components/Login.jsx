@@ -11,7 +11,7 @@ const Login = () => {
 
     // Simulação de autenticação
     if (email === "pedro@eu" && password === "123") {
-      window.location.href = "/dashboard"; // Redireciona para a área do cliente
+      <Link to='/dashboard' className="link"></Link> // Redireciona para a área do cliente
     } else {
       setError("Credenciais inválidas. Tente novamente.");
     }
