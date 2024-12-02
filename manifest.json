@@ -16,6 +16,19 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "logoIAgiliza.png",
+      "type": "image/png"
+    }
+    ,
+    {
+      "src": "imageSend.png",
+      "type": "image/png"
+    },
+    {
+      "src": "backgrund-pagina-inicial.webp",
+      "type": "image/webp"
     }
   ],
   "start_url": ".",
