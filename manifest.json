@@ -18,18 +18,19 @@
       "sizes": "512x512"
     },
     {
-      "src": "logoIAgiliza.png",
+      "src": "image/logoIAgiliza.png",
       "type": "image/png"
     }
     ,
     {
-      "src": "imageSend.png",
+      "src": "image/imageSend.png",
       "type": "image/png"
     },
     {
-      "src": "backgrund-pagina-inicial.webp",
-      "type": "image/webp"
+      "src": "image/backgrund-pagina-inicial.png",
+      "type": "image/png"
     }
+    
   ],
   "start_url": ".",
   "display": "standalone",
