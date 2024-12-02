@@ -142,7 +142,7 @@ function Servicos() {
                                 value={userInput}
                                 onChange={(e) => setUserInput(e.target.value)}
                             />
-                            <button onClick={sendMessage}><img src="src\components\images\imageSend.png" alt="" /></button>
+                            <button onClick={sendMessage}><img src="./public/images/imageSend.png" alt="" /></button>
                         </div>
                     </div>
                 </div>

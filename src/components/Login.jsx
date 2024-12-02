@@ -11,7 +11,7 @@ const Login = () => {
 
     // Simulação de autenticação
     if (email === "pedro@eu" && password === "123") {
-      <Link to='/dashboard' className="link"></Link> // Redireciona para a área do cliente
+      window.location.href = "/IAgiliza/dashboard"; // Redireciona para a área do cliente
     } else {
       setError("Credenciais inválidas. Tente novamente.");
     }
