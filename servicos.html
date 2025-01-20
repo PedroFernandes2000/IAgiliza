@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="relative min-h-full dark">
+
+<head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Descubra novas pocibilidades com a IAgiliza">
+
+    <!-- Title -->
+    <title>IAgiliza</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imges/icon_IAgiliza.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Theme Check and Update -->
+    <script>
+        const html = document.querySelector('html');
+        const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: light)').matches);
+        const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: light)').matches);
+
+        if (isLightOrAuto && html.classList.contains('dark')) html.classList.remove('dark');
+        else if (isDarkOrAuto && html.classList.contains('light')) html.classList.remove('light');
+        else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');
+        else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
+        else html.classList.add('dark');
+    </script>
+
+    <!-- CSS Preline -->
+    <link rel="stylesheet" href="https://preline.co/assets/css/main.min.css">
+</head>
+
+<body class="bg-neutral-900">
+    <!-- ========== HEADER ========== -->
+    <header class="sticky top-0 inset-x-0 z-50 w-full bg-neutral-900 shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center text-blue-500 text-lg font-bold">
+                <img src="./imges/icon_IAgiliza.png" class="w-7 mx-2">
+                <span class="ml-2 mt-2">IAgiliza</span>
+            </a>
+
+            <!-- Menu Items -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="./servicos.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Serviços</a>
+                <a href="./sobre.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Sobre</a>
+                <a href="./Depoimentos.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Depoimentos</a>
+                <a href="./Contato.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Contato</a>
+                <a href="./blog.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Blog</a>
+            </div>
+
+            <!-- Call to Action -->
+            
+
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-200 focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-neutral-900 md:hidden">
+            <div class="flex flex-col space-y-4 p-4">
+                <a href="./servicos.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Serviços</a>
+                <a href="./sobre.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Sobre</a>
+                <a href="./Depoimentos.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Depoimentos</a>
+                <a href="./Contato.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Contato</a>
+                <a href="./blog.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Blog</a>
+                </div>
+        </div>
+
+        <script>
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+    </header>
+
+    <!-- Features -->
+    <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-gradient-to-tr from-violet-600 to-blue-700">
+        <div class="mt-5 max-w-2xl text-center mx-auto">
+            <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
+                Nossos Serviços
+                <span class="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">Tenha todo o
+                    potencial da IA ao seu alcance</span>
+            </h1>
+        </div>
+        <div class="relative p-6 md:p-16">
+            <!-- Grid -->
+            <div
+                class="rounded-lg relative z-10 lg:grid lg:grid-cols-12 lg:gap-2 lg:items-center">
+                <div class="p-6 lg:col-span-6">
+                    <div class="p-6 relative">
+                        <!-- Tab Content -->
+                        <div class="p-6  rounded-lg  space-y-6">
+                            <!-- Chatbots Personalizados -->
+                            <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1"
+                                class="transition-transform transform duration-500">
+                                <div class="text-gray-800 dark:text-neutral-200">
+                                    <img src="./imges/img_service_chatbot.webp" alt="">
+                                    <h2 class="text-2xl font-semibold text-blue-500 my-4">Chatbots Personalizados</h2>
+                                    <p class="preline mb-4">
+                                        Criamos chatbots que atendem às necessidades específicas de sua empresa,
+                                        automatizando respostas e otimizando o atendimento ao cliente.
+                                    </p>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Casos de Uso:</h3>
+                                    <ul class="list-disc pl-6 mb-4">
+                                        <li><strong>E-commerce:</strong> Auxilia na busca de produtos e no
+                                            acompanhamento de pedidos.</li>
+                                        <li><strong>Saúde:</strong> Facilita agendamentos e fornece informações sobre
+                                            serviços.</li>
+                                    </ul>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Benefícios:</h3>
+                                    <ul class="list-disc pl-6">
+                                        <li><strong>Eficiência:</strong> Automatiza tarefas repetitivas.</li>
+                                        <li><strong>Disponibilidade 24/7:</strong> Atendimento contínuo.</li>
+                                        <li><strong>Escalabilidade:</strong> Atende a grandes volumes de interações.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Automação de WhatsApp com ChatGPT -->
+                            <div id="tabs-with-card-2" class="hidden transition-transform transform duration-500"
+                                role="tabpanel" aria-labelledby="tabs-with-card-item-2">
+                                <div class="text-gray-800 dark:text-neutral-200">
+                                    <img src="./imges/img_service_automatizacao-zap.webp" alt="">
+                                    <h2 class="text-2xl font-semibold text-blue-500 my-4">Automação de WhatsApp com
+                                        ChatGPT</h2>
+                                    <p class="preline mb-4">
+                                        Integrando o ChatGPT ao WhatsApp, automatizamos o atendimento e melhoramos a
+                                        eficiência, oferecendo respostas rápidas e personalizadas.
+                                    </p>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Casos de Uso:</h3>
+                                    <ul class="list-disc pl-6 mb-4">
+                                        <li><strong>Vendas:</strong> Auxilia em consultas de produtos e pedidos.</li>
+                                        <li><strong>Serviços Bancários:</strong> Facilita a consulta de saldos e
+                                            pagamentos.</li>
+                                    </ul>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Benefícios:</h3>
+                                    <ul class="list-disc pl-6">
+                                        <li><strong>Rápido:</strong> Respostas imediatas.</li>
+                                        <li><strong>Economia:</strong> Reduz necessidade de uma grande equipe.</li>
+                                        <li><strong>Personalizado:</strong> Respostas únicas para cada cliente.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Resposta Automática de E-mails -->
+                            <div id="tabs-with-card-3" class="hidden transition-transform transform duration-500"
+                                role="tabpanel" aria-labelledby="tabs-with-card-item-3">
+                                <div class="text-gray-800 dark:text-neutral-200">
+                                    <img src="./imges/img_service_email.webp" alt="">
+                                    <h2 class="text-2xl font-semibold text-blue-500 my-4">Resposta Automática de E-mails
+                                    </h2>
+                                    <p class="preline mb-4">
+                                        Automatizamos respostas por e-mail para garantir que seus clientes recebam uma
+                                        resposta rápida, sem necessidade de intervenção manual.
+                                    </p>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Casos de Uso:</h3>
+                                    <ul class="list-disc pl-6 mb-4">
+                                        <li><strong>E-commerce:</strong> Confirmações automáticas de pedidos.</li>
+                                        <li><strong>Suporte:</strong> Respostas rápidas a problemas comuns.</li>
+                                    </ul>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Benefícios:</h3>
+                                    <ul class="list-disc pl-6">
+                                        <li><strong>Rapidez:</strong> Respostas instantâneas.</li>
+                                        <li><strong>Precisão:</strong> Elimina erros humanos.</li>
+                                        <li><strong>Escalabilidade:</strong> Atende a um grande volume de e-mails.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Resposta de WhatsApp com Voz -->
+                            <div id="tabs-with-card-4" class="hidden transition-transform transform duration-500"
+                                role="tabpanel" aria-labelledby="tabs-with-card-item-4">
+                                <div class="text-gray-800 dark:text-neutral-200">
+                                    <img src="./imges/img_service_zap-por-voz.webp" alt="">
+                                    <h2 class="text-2xl font-semibold text-blue-500 my-4">Resposta de WhatsApp com Voz
+                                    </h2>
+                                    <p class="preline mb-4">
+                                        Enviamos respostas de voz no WhatsApp, criando uma interação mais personalizada
+                                        e dinâmica com seus clientes.
+                                    </p>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Casos de Uso:</h3>
+                                    <ul class="list-disc pl-6 mb-4">
+                                        <li><strong>Atendimento:</strong> Respostas de voz para perguntas frequentes.
+                                        </li>
+                                        <li><strong>Educação:</strong> Feedbacks e lembretes por áudio.</li>
+                                    </ul>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Benefícios:</h3>
+                                    <ul class="list-disc pl-6">
+                                        <li><strong>Humanização:</strong> Respostas mais naturais.</li>
+                                        <li><strong>Acessibilidade:</strong> Conveniência em situações sem possibilidade
+                                            de digitar.</li>
+                                        <li><strong>Engajamento:</strong> Maior interação com os clientes.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Soluções de IA para Sites -->
+                            <div id="tabs-with-card-5" class="hidden transition-transform transform duration-500"
+                                role="tabpanel" aria-labelledby="tabs-with-card-item-5">
+                                <div class="text-gray-800 dark:text-neutral-200">
+                                    <img src="./imges/img_service_sites.webp" alt="">
+                                    <h2 class="text-2xl font-semibold text-blue-500 my-4">Soluções de IA para Sites</h2>
+                                    <p class="preline mb-4">
+                                        Integramos IA aos sites, criando chatbots que otimizam a experiência do usuário
+                                        e aumentam a conversão de visitantes em clientes.
+                                    </p>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Casos de Uso:</h3>
+                                    <ul class="list-disc pl-6 mb-4">
+                                        <li><strong>E-commerce:</strong> Auxilia na navegação e processos de compra.
+                                        </li>
+                                        <li><strong>Suporte:</strong> Fornece assistência técnica instantânea.</li>
+                                    </ul>
+                                    <h3 class="text-xl font-medium text-blue-400 mb-2">Benefícios:</h3>
+                                    <ul class="list-disc pl-6">
+                                        <li><strong>Experiência Rápida:</strong> A IA responde instantaneamente às
+                                            dúvidas.</li>
+                                        <li><strong>Aumento de Conversões:</strong> Melhora a taxa de conversão no site.
+                                        </li>
+                                        <li><strong>Personalização:</strong> A IA aprende com cada interação.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Tab Content -->
+
+
+                    </div>
+                </div>
+                <!-- End Col -->
+                <div class="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2 p-6 rounded-lg">
+
+                    <!-- Tab Navs -->
+                    <nav class="grid gap-4 p-6 rounded-lg" aria-label="Tabs" role="tablist" aria-orientation="vertical">
+                        <!-- Chatbots Personalizados -->
+                        <button type="button"
+                            class="hs-tab-active:bg-white hs-tab-active:shadow-md text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 active"
+                            id="tabs-with-card-item-1" aria-selected="true" data-hs-tab="#tabs-with-card-1"
+                            aria-controls="tabs-with-card-1" role="tab">
+                            <span class="flex gap-x-6">
+                                <span class="grow">
+                                    <span
+                                        class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
+                                        Chatbots Personalizados
+                                    </span>
+                                    <span
+                                        class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                                        Soluções sob medida para interação com clientes.
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <!-- Automação de WhatsApp com ChatGPT -->
+                        <button type="button"
+                            class="hs-tab-active:bg-white hs-tab-active:shadow-md text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                            id="tabs-with-card-item-2" aria-selected="false" data-hs-tab="#tabs-with-card-2"
+                            aria-controls="tabs-with-card-2" role="tab">
+                            <span class="flex gap-x-6">
+                                <span class="grow">
+                                    <span
+                                        class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
+                                        Automação de WhatsApp com ChatGPT
+                                    </span>
+                                    <span
+                                        class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                                        Automação inteligente para o WhatsApp.
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <!-- Resposta Automática de E-mails -->
+                        <button type="button"
+                            class="hs-tab-active:bg-white hs-tab-active:shadow-md text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                            id="tabs-with-card-item-3" aria-selected="false" data-hs-tab="#tabs-with-card-3"
+                            aria-controls="tabs-with-card-3" role="tab">
+                            <span class="flex gap-x-6">
+                                <span class="grow">
+                                    <span
+                                        class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
+                                        Resposta Automática de E-mails
+                                    </span>
+                                    <span
+                                        class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                                        Agilidade na comunicação empresarial.
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <!-- Resposta de WhatsApp com Voz -->
+                        <button type="button"
+                            class="hs-tab-active:bg-white hs-tab-active:shadow-md text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                            id="tabs-with-card-item-4" aria-selected="false" data-hs-tab="#tabs-with-card-4"
+                            aria-controls="tabs-with-card-4" role="tab">
+                            <span class="flex gap-x-6">
+                                <span class="grow">
+                                    <span
+                                        class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
+                                        Resposta de WhatsApp com Voz
+                                    </span>
+                                    <span
+                                        class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                                        Mensagens de voz automatizadas e personalizadas.
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+
+                        <!-- Soluções de IA para Sites -->
+                        <button type="button"
+                            class="hs-tab-active:bg-white hs-tab-active:shadow-md text-start hover:bg-gray-200 focus:outline-none focus:bg-gray-200 p-4 md:p-5 rounded-xl dark:hs-tab-active:bg-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                            id="tabs-with-card-item-5" aria-selected="false" data-hs-tab="#tabs-with-card-5"
+                            aria-controls="tabs-with-card-5" role="tab">
+                            <span class="flex gap-x-6">
+                                <span class="grow">
+                                    <span
+                                        class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">
+                                        Soluções de IA para Sites
+                                    </span>
+                                    <span
+                                        class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">
+                                        Chatbot com IA integrado ao seu site.
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+                    </nav>
+                    <!-- End Tab Navs -->
+                </div>
+                <!-- End Col -->
+
+            </div>
+            <!-- End Grid -->
+        </div>
+    </div>
+
+
+    <!-- End Features -->
+
+    <!-- Hire Us -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Grid -->
+        <div class="grid md:grid-cols-2 items-center gap-12">
+            <div id="orcamento">
+                <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl lg:text-5xl lg:leading-tight dark:text-white">
+                    Solicite um orçamento
+                </h1>
+                <p class="mt-1 md:text-lg text-gray-800 dark:text-neutral-200">
+                    Preencha as informações abaixo para que possamos entender suas necessidades e apresentar a melhor
+                    solução.
+                </p>
+
+                <div class="mt-8">
+                    <h2 class="text-lg font-semibold text-gray-800 dark:text-neutral-200">
+                        O que precisamos saber?
+                    </h2>
+
+                    <ul class="mt-2 space-y-2">
+                        <li class="flex gap-x-3">
+                            <svg class="shrink-0 mt-0.5 size-5 text-gray-600 dark:text-neutral-400"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span class="text-gray-600 dark:text-neutral-400">
+                                Descreva o seu projeto em detalhes.
+                            </span>
+                        </li>
+
+                        <li class="flex gap-x-3">
+                            <svg class="shrink-0 mt-0.5 size-5 text-gray-600 dark:text-neutral-400"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span class="text-gray-600 dark:text-neutral-400">
+                                Informe o prazo esperado para conclusão.
+                            </span>
+                        </li>
+
+                        <li class="flex gap-x-3">
+                            <svg class="shrink-0 mt-0.5 size-5 text-gray-600 dark:text-neutral-400"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span class="text-gray-600 dark:text-neutral-400">
+                                Inclua o orçamento disponível para o projeto.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Col -->
+
+            <div class="relative">
+                <!-- Card -->
+                <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-10 dark:border-neutral-800">
+                    <h2 class="text-xl font-semibold text-white">
+                        Preencha o formulário
+                    </h2>
+
+                    <form>
+                        <div class="mt-6 grid gap-4 lg:gap-6">
+                            <!-- Grid -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                                <div>
+                                    <label for="hs-firstname-hire-us-1"
+                                        class="block mb-2 text-sm text-neutral-400 font-medium">Nome</label>
+                                    <input type="text" name="hs-firstname-hire-us-1" id="hs-firstname-hire-us-1"
+                                        class="py-3 px-4 block w-full bg-neutral-800 border border-neutral-700 rounded-lg text-sm text-white placeholder:text-neutral-500 focus:border-[#ff0] focus:ring-[#ff0] focus:outline-none">
+                                </div>
+
+                                <div>
+                                    <label for="hs-lastname-hire-us-1"
+                                        class="block mb-2 text-sm text-neutral-400 font-medium">Sobrenome</label>
+                                    <input type="text" name="hs-lastname-hire-us-1" id="hs-lastname-hire-us-1"
+                                        class="py-3 px-4 block w-full bg-neutral-800 border border-neutral-700 rounded-lg text-sm text-white placeholder:text-neutral-500 focus:border-[#ff0] focus:ring-[#ff0] focus:outline-none">
+                                </div>
+                            </div>
+                            <!-- End Grid -->
+
+                            <div>
+                                <label for="hs-work-email-hire-us-1"
+                                    class="block mb-2 text-sm text-neutral-400 font-medium">E-mail</label>
+                                <input type="email" name="hs-work-email-hire-us-1" id="hs-work-email-hire-us-1"
+                                    autocomplete="email"
+                                    class="py-3 px-4 block w-full bg-neutral-800 border border-neutral-700 rounded-lg text-sm text-white placeholder:text-neutral-500 focus:border-[#ff0] focus:ring-[#ff0] focus:outline-none">
+                            </div>
+
+                            <!-- Grid -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+                                <div>
+                                    <label for="hs-company-hire-us-1"
+                                        class="block mb-2 text-sm text-neutral-400 font-medium">Empresa</label>
+                                    <input type="text" name="hs-company-hire-us-1" id="hs-company-hire-us-1"
+                                        class="py-3 px-4 block w-full bg-neutral-800 border border-neutral-700 rounded-lg text-sm text-white placeholder:text-neutral-500 focus:border-[#ff0] focus:ring-[#ff0] focus:outline-none">
+                                </div>
+
+                                <div>
+                                    <label for="hs-company-website-hire-us-1"
+                                        class="block mb-2 text-sm text-neutral-400 font-medium">Site da empresa</label>
+                                    <input type="text" name="hs-company-website-hire-us-1"
+                                        id="hs-company-website-hire-us-1"
+                                        class="py-3 px-4 block w-full bg-neutral-800 border border-neutral-700 rounded-lg text-sm text-white placeholder:text-neutral-500 focus:border-[#ff0] focus:ring-[#ff0] focus:outline-none">
+                                </div>
+                            </div>
+                            <!-- End Grid -->
+
+                            <div>
+                                <label for="hs-about-hire-us-1"
+                                    class="block mb-2 text-sm text-neutral-400 font-medium">Detalhes</label>
+                                <textarea id="hs-about-hire-us-1" name="hs-about-hire-us-1" rows="4"
+                                    class="py-3 px-4 block w-full bg-neutral-800 border border-neutral-700 rounded-lg text-sm text-white placeholder:text-neutral-500 focus:border-[#ff0] focus:ring-[#ff0] focus:outline-none"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End Grid -->
+
+                    <!-- Checkbox -->
+                    <div class="mt-3 flex">
+                        <div class="flex">
+                            <input id="remember-me" name="remember-me" type="checkbox"
+                                class="shrink-0 mt-1.5 border-neutral-700 rounded bg-neutral-800 text-blue-500 focus:ring-blue-500 focus:outline-none">
+                        </div>
+                        <div class="ms-3">
+                            <label for="remember-me" class="text-sm text-neutral-400">Ao enviar este formulário, eu
+                                aceito a <a
+                                    class="text-blue-500 decoration-2 hover:underline focus:outline-none focus:underline font-medium"
+                                    href="#">Política de Privacidade</a></label>
+                        </div>
+                    </div>
+                    <!-- End Checkbox -->
+
+                    <div class="mt-6 grid">
+                        <button type="submit"
+                            class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-white font-medium rounded-lg border border-transparent bg-blue-500 text-neutral-800 hover:bg-blue-400 focus:outline-none focus:bg-blue-400">
+                            Enviar solicitação
+                        </button>
+                    </div>
+                </div>
+                <!-- End Card -->
+
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Grid -->
+    </div>
+    <!-- End Hire Us -->
+    <script src="../../index.js"></script>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="relative overflow-hidden bg-neutral-900">
+        <svg class="absolute -bottom-20 start-1/2 w-[1900px] transform -translate-x-1/2" width="2745" height="488"
+            viewBox="0 0 2745 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.5 330.864C232.505 403.801 853.749 527.683 1482.69 439.719C2111.63 351.756 2585.54 434.588 2743.87 487"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 308.873C232.505 381.81 853.749 505.692 1482.69 417.728C2111.63 329.765 2585.54 412.597 2743.87 465.009"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 286.882C232.505 359.819 853.749 483.701 1482.69 395.738C2111.63 307.774 2585.54 390.606 2743.87 443.018"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 264.891C232.505 337.828 853.749 461.71 1482.69 373.747C2111.63 285.783 2585.54 368.615 2743.87 421.027"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 242.9C232.505 315.837 853.749 439.719 1482.69 351.756C2111.63 263.792 2585.54 346.624 2743.87 399.036"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 220.909C232.505 293.846 853.749 417.728 1482.69 329.765C2111.63 241.801 2585.54 324.633 2743.87 377.045"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 198.918C232.505 271.855 853.749 395.737 1482.69 307.774C2111.63 219.81 2585.54 302.642 2743.87 355.054"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 176.927C232.505 249.864 853.749 373.746 1482.69 285.783C2111.63 197.819 2585.54 280.651 2743.87 333.063"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 154.937C232.505 227.873 853.749 351.756 1482.69 263.792C2111.63 175.828 2585.54 258.661 2743.87 311.072"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 132.946C232.505 205.882 853.749 329.765 1482.69 241.801C2111.63 153.837 2585.54 236.67 2743.87 289.082"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 110.955C232.505 183.891 853.749 307.774 1482.69 219.81C2111.63 131.846 2585.54 214.679 2743.87 267.091"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 88.9639C232.505 161.901 853.749 285.783 1482.69 197.819C2111.63 109.855 2585.54 192.688 2743.87 245.1"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 66.9729C232.505 139.91 853.749 263.792 1482.69 175.828C2111.63 87.8643 2585.54 170.697 2743.87 223.109"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 44.9819C232.505 117.919 853.749 241.801 1482.69 153.837C2111.63 65.8733 2585.54 148.706 2743.87 201.118"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 22.991C232.505 95.9276 853.749 219.81 1482.69 131.846C2111.63 43.8824 2585.54 126.715 2743.87 179.127"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 1C232.505 73.9367 853.749 197.819 1482.69 109.855C2111.63 21.8914 2585.54 104.724 2743.87 157.136"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+        </svg>
+
+        <div class="relative z-10">
+            <div class="w-full max-w-5xl px-4 xl:px-0 py-10 lg:pt-16 mx-auto">
+                <div class="inline-flex items-center">
+                    <!-- Logo -->
+                    <div class="flex items-center text-blue-500 text-lg font-bold">
+                        <img src="./imges/icon_IAgiliza.png" class="w-7 mx-2">
+                        <span class="ml-2 mt-2">IAgiliza</span>
+                    </div>
+                    <!-- End Logo -->
+
+                    <div class="border-s border-neutral-700 ps-5 ms-5">
+                        <p class="text-sm text-neutral-400">2024 IAgiliza ltda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+    <script src="./index.js"></script>
+</body>

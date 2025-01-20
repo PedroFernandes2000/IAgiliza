@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="relative min-h-full dark">
+
+<head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Descubra novas pocibilidades com a IAgiliza">
+
+    <!-- Title -->
+    <title>IAgiliza</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imges/icon_IAgiliza.png">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Theme Check and Update -->
+    <script>
+        const html = document.querySelector('html');
+        const isLightOrAuto = localStorage.getItem('hs_theme') === 'light' || (localStorage.getItem('hs_theme') === 'auto' && !window.matchMedia('(prefers-color-scheme: light)').matches);
+        const isDarkOrAuto = localStorage.getItem('hs_theme') === 'dark' || (localStorage.getItem('hs_theme') === 'auto' && window.matchMedia('(prefers-color-scheme: light)').matches);
+
+        if (isLightOrAuto && html.classList.contains('dark')) html.classList.remove('dark');
+        else if (isDarkOrAuto && html.classList.contains('light')) html.classList.remove('light');
+        else if (isDarkOrAuto && !html.classList.contains('dark')) html.classList.add('dark');
+        else if (isLightOrAuto && !html.classList.contains('light')) html.classList.add('light');
+        else html.classList.add('dark');
+    </script>
+
+    <!-- CSS Preline -->
+    <link rel="stylesheet" href="https://preline.co/assets/css/main.min.css">
+</head>
+
+<body class="bg-neutral-900">
+    <!-- ========== HEADER ========== -->
+    <header class="sticky top-0 inset-x-0 z-50 w-full bg-neutral-900 shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="./index.html" class="flex items-center text-blue-500 text-lg font-bold">
+                <img src="./imges/icon_IAgiliza.png" class="w-7 mx-2">
+                <span class="ml-2 mt-2">IAgiliza</span>
+            </a>
+
+            <!-- Menu Items -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="./servicos.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Serviços</a>
+                <a href="./sobre.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Sobre</a>
+                <a href="./Depoimentos.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Depoimentos</a>
+                <a href="./Contato.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Contato</a>
+                <a href="./blog.html" class="text-sm text-gray-200 hover:text-blue-500 transition">Blog</a>
+            </div>
+
+            <!-- Call to Action -->
+            
+
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-gray-200 focus:outline-none">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-neutral-900 md:hidden">
+            <div class="flex flex-col space-y-4 p-4">
+                <a href="./servicos.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Serviços</a>
+                <a href="./sobre.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Sobre</a>
+                <a href="./Depoimentos.html"
+                    class="text-sm text-gray-200 hover:text-blue-400 transition">Depoimentos</a>
+                <a href="./Contato.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Contato</a>
+                <a href="./blog.html" class="text-sm text-gray-200 hover:text-blue-400 transition">Blog</a>
+                </div>
+        </div>
+
+        <script>
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
+    </header>
+    <!-- End Entre em Contato -->
+    <div class="bg-neutral-900">
+        <div class="max-w-5xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
+            <!-- Title -->
+            <div class="max-w-3xl mb-10 lg:mb-14">
+                <h2 class="text-white font-semibold text-2xl md:text-4xl md:leading-tight">Entre em contato</h2>
+                <p class="mt-1 text-neutral-400">Conte-nos como podemos ajudar a otimizar os processos da sua empresa.
+                </p>
+            </div>
+            <!-- End Title -->
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16">
+                <div class="md:order-2 border-b border-neutral-800 pb-10 mb-10 md:border-b-0 md:pb-0 md:mb-0">
+                    <form>
+                        <div class="space-y-4">
+                            <!-- Input -->
+                            <div class="relative">
+                                <input type="text" id="hs-tac-input-name"
+                                    class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-2 autofill:pt-6 autofill:pb-2"
+                                    placeholder="Nome">
+                                <label for="hs-tac-input-name"
+                                    class="absolute top-0 start-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-neutral-400 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-neutral-400">Nome</label>
+                            </div>
+                            <!-- End Input -->
+
+                            <!-- Input -->
+                            <div class="relative">
+                                <input type="email" id="hs-tac-input-email"
+                                    class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-2 autofill:pt-6 autofill:pb-2"
+                                    placeholder="Email">
+                                <label for="hs-tac-input-email"
+                                    class="absolute top-0 start-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-neutral-400 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-neutral-400">Email</label>
+                            </div>
+                            <!-- End Input -->
+
+                            <!-- Input -->
+                            <div class="relative">
+                                <input type="text" id="hs-tac-input-company"
+                                    class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-2 autofill:pt-6 autofill:pb-2"
+                                    placeholder="Empresa">
+                                <label for="hs-tac-input-company"
+                                    class="absolute top-0 start-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-neutral-400 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-neutral-400">Empresa</label>
+                            </div>
+                            <!-- End Input -->
+
+                            <!-- Input -->
+                            <div class="relative">
+                                <input type="text" id="hs-tac-input-phone"
+                                    class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-2 autofill:pt-6 autofill:pb-2"
+                                    placeholder="Telefone">
+                                <label for="hs-tac-input-phone"
+                                    class="absolute top-0 start-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-neutral-400 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-neutral-400">Telefone</label>
+                            </div>
+                            <!-- End Input -->
+
+                            <!-- Textarea -->
+                            <div class="relative">
+                                <textarea id="hs-tac-message"
+                                    class="peer p-4 block w-full bg-neutral-800 border-transparent rounded-lg text-sm text-white placeholder:text-transparent focus:outline-none focus:ring-0 focus:border-transparent disabled:opacity-50 disabled:pointer-events-none focus:pt-6 focus:pb-2 [&:not(:placeholder-shown)]:pt-6 [&:not(:placeholder-shown)]:pb-2 autofill:pt-6 autofill:pb-2"
+                                    placeholder="Descreva seu projeto"></textarea>
+                                <label for="hs-tac-message"
+                                    class="absolute top-0 start-0 p-4 h-full text-neutral-400 text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent peer-disabled:opacity-50 peer-disabled:pointer-events-none peer-focus:text-xs peer-focus:-translate-y-1.5 peer-focus:text-neutral-400 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:-translate-y-1.5 peer-[:not(:placeholder-shown)]:text-neutral-400">Descreva
+                                    seu projeto</label>
+                            </div>
+                            <!-- End Textarea -->
+                        </div>
+
+                        <div class="mt-2">
+                            <p class="text-xs text-neutral-500">
+                                Todos os campos são obrigatórios
+                            </p>
+
+                            <p class="mt-5">
+                                <a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-blue-500 font-medium text-sm text-white rounded-full focus:outline-none"
+                                    href="#">
+                                    Enviar
+                                    <svg class="flex-shrink-0 size-4 transition group-hover:translate-x-0.5 group-hover:translate-x-0 group-focus:translate-x-0.5 group-focus:translate-x-0"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Col -->
+
+                <div class="space-y-14">
+                    <!-- Item -->
+                    <div class="flex gap-x-5">
+                        <svg class="flex-shrink-0 size-8 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 256 256" fill="currentColor" stroke-width="2.5">
+                            <path
+                                d="M128.00049,28A100.02594,100.02594,0,0,0,41.11475,177.53908l-9.0044,31.51661a11.99971,11.99971,0,0,0,14.835,14.834l31.5166-9.00391A100.00677,100.00677,0,1,0,128.00049,28Zm0,192a91.87082,91.87082,0,0,1-46.95264-12.86719,3.99494,3.99494,0,0,0-3.14355-.4082l-33.15723,9.47363a3.99979,3.99979,0,0,1-4.94434-4.94531l9.47266-33.15625a4.00111,4.00111,0,0,0-.4082-3.14355A92.01077,92.01077,0,1,1,128.00049,220Zm50.51123-73.457-20.45947-11.69141a12.01054,12.01054,0,0,0-12.12745.12891l-13.80664,8.28418a44.04183,44.04183,0,0,1-19.38232-19.38281l8.28369-13.80664a12.0108,12.0108,0,0,0,.12891-12.127l-11.69092-20.46A10.91584,10.91584,0,0,0,100,72a32.00811,32.00811,0,0,0-32,31.88086A84.001,84.001,0,0,0,151.999,188h.12012A32.00842,32.00842,0,0,0,184,156,10.913,10.913,0,0,0,178.51172,146.543ZM152.10791,180h-.1084A75.99972,75.99972,0,0,1,76,103.8926,23.997,23.997,0,0,1,100,80a2.89975,2.89975,0,0,1,2.51172,1.457L114.20264,101.918a4.00418,4.00418,0,0,1-.043,4.042l-9.38916,15.64844a3.9987,3.9987,0,0,0-.21826,3.69824,52.04112,52.04112,0,0,0,26.1416,26.1416,3.99707,3.99707,0,0,0,3.69873-.21875L150.04,141.84084a4.006,4.006,0,0,1,4.043-.04394l20.46045,11.69238A2.89712,2.89712,0,0,1,176,156,23.99725,23.99725,0,0,1,152.10791,180Z">
+                            </path>
+                        </svg>
+
+                        <div class="grow">
+                            <h4 class="text-white font-semibold">Nosso telefone:</h4>
+
+                            <a class="mt-1 text-neutral-400 text-sm not-italic" href="  " target="_blank">
+                                +55 (11) 96968-3567
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+
+                    <!-- Item -->
+                    <div class="flex gap-x-5">
+                        <svg class="flex-shrink-0 size-6 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
+                            <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
+                        </svg>
+                        <div class="grow">
+                            <h4 class="text-white font-semibold">Envie-nos um email:</h4>
+
+                            <a class="mt-1 text-neutral-400 text-sm" href="mailto:contato@iagiliza.com" target="_blank">
+                                contato@iagiliza.com
+                            </a>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+
+                    <!-- Item -->
+                    <div class="flex gap-x-3.5">
+                        <svg class="flex-shrink-0 size-8 text-neutral-500" width="64px" height="64px"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
+                            stroke-width="1.0">
+                            <path
+                                d="M6 8H4M6 16H4M6 12H3M7 4.51555C8.4301 3.55827 10.1499 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C10.1499 21 8.4301 20.4417 7 19.4845M14 9.49991C13.5 9.37589 12.6851 9.37133 12 9.37589M12 9.37589C11.7709 9.37742 11.9094 9.36768 11.6 9.37589C10.7926 9.40108 10.0016 9.73666 10 10.6874C9.99825 11.7002 11 11.9999 12 11.9999C13 11.9999 14 12.2311 14 13.3124C14 14.125 13.1925 14.4811 12.1861 14.599C12.1216 14.599 12.0597 14.5991 12 14.5994M12 9.37589L12 8M12 14.5994C11.3198 14.6022 10.9193 14.6148 10 14.4999M12 14.5994L12 16">
+                            </path>
+                        </svg>
+
+                        <div class="grow">
+                            <h4 class="text-white font-semibold">Solicite um Orçamento</h4>
+                            <p class="mt-1 text-neutral-400">Diga qual é a sua demanda que nós solucionaremos.</p>
+                            <a href="./servicos.html#orcamento" class="text-blue-500">Solicite Agora</a>
+                        </div>
+                    </div>
+                    <!-- End Item -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+        </div>
+    </div>
+    <!-- End Entre em Contato -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="relative overflow-hidden bg-neutral-900">
+        <svg class="absolute -bottom-20 start-1/2 w-[1900px] transform -translate-x-1/2" width="2745" height="488"
+            viewBox="0 0 2745 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M0.5 330.864C232.505 403.801 853.749 527.683 1482.69 439.719C2111.63 351.756 2585.54 434.588 2743.87 487"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 308.873C232.505 381.81 853.749 505.692 1482.69 417.728C2111.63 329.765 2585.54 412.597 2743.87 465.009"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 286.882C232.505 359.819 853.749 483.701 1482.69 395.738C2111.63 307.774 2585.54 390.606 2743.87 443.018"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 264.891C232.505 337.828 853.749 461.71 1482.69 373.747C2111.63 285.783 2585.54 368.615 2743.87 421.027"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 242.9C232.505 315.837 853.749 439.719 1482.69 351.756C2111.63 263.792 2585.54 346.624 2743.87 399.036"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 220.909C232.505 293.846 853.749 417.728 1482.69 329.765C2111.63 241.801 2585.54 324.633 2743.87 377.045"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 198.918C232.505 271.855 853.749 395.737 1482.69 307.774C2111.63 219.81 2585.54 302.642 2743.87 355.054"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 176.927C232.505 249.864 853.749 373.746 1482.69 285.783C2111.63 197.819 2585.54 280.651 2743.87 333.063"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 154.937C232.505 227.873 853.749 351.756 1482.69 263.792C2111.63 175.828 2585.54 258.661 2743.87 311.072"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 132.946C232.505 205.882 853.749 329.765 1482.69 241.801C2111.63 153.837 2585.54 236.67 2743.87 289.082"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 110.955C232.505 183.891 853.749 307.774 1482.69 219.81C2111.63 131.846 2585.54 214.679 2743.87 267.091"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 88.9639C232.505 161.901 853.749 285.783 1482.69 197.819C2111.63 109.855 2585.54 192.688 2743.87 245.1"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 66.9729C232.505 139.91 853.749 263.792 1482.69 175.828C2111.63 87.8643 2585.54 170.697 2743.87 223.109"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 44.9819C232.505 117.919 853.749 241.801 1482.69 153.837C2111.63 65.8733 2585.54 148.706 2743.87 201.118"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 22.991C232.505 95.9276 853.749 219.81 1482.69 131.846C2111.63 43.8824 2585.54 126.715 2743.87 179.127"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+            <path
+                d="M0.5 1C232.505 73.9367 853.749 197.819 1482.69 109.855C2111.63 21.8914 2585.54 104.724 2743.87 157.136"
+                class="stroke-neutral-700/50" stroke="currentColor" />
+        </svg>
+
+        <div class="relative z-10">
+            <div class="w-full max-w-5xl px-4 xl:px-0 py-10 lg:pt-16 mx-auto">
+                <div class="inline-flex items-center">
+                    <!-- Logo -->
+                    <div class="flex items-center text-blue-500 text-lg font-bold">
+                        <img src="./imges/icon_IAgiliza.png" class="w-7 mx-2">
+                        <span class="ml-2 mt-2">IAgiliza</span>
+                    </div>
+                    <!-- End Logo -->
+
+                    <div class="border-s border-neutral-700 ps-5 ms-5">
+                        <p class="text-sm text-neutral-400">2024 IAgiliza ltda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+    
+
+    <!-- JS Implementing Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+    <script src="./index.js"></script>
+
+</body>
